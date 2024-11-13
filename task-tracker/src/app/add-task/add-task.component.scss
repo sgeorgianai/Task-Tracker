@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+.form-group {
+  margin-bottom: 20px;
+  text-align: center; /* Aliniază casetele de text în centru */
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 450px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-family: 'Pacifico', cursive;
+  color: black;
+  font-size: 1.2em;
+  padding-left: 10px;
+}
+
+input[type="text"],
+textarea {
+  width: 70%; /* Redu lățimea casetelor de text */
+  max-width: 300px; /* Setează o lățime maximă */
+  padding: 8px;
+  border: 2px solid black;
+  border-radius: 10px;
+  box-sizing: border-box;
+  margin: 0 auto; /* Aliniază casetele de text în centru */
+  margin-bottom: 10px;
+  resize: vertical;
+  font-size: 1.1em;
+}
+
+textarea {
+  min-height: 100px;
+}
+
+.btn-container {
+  text-align: center; /* Aliniază butoanele în centru */
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #73D2DE;
+  color: black;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-size: 1.1em;
+  margin-right: 10px;
+  border-radius: 0.35rem;
+}
+
+button[type="submit"]:hover {
+  background-color: #ff69b4;
+}
+
+button[mat-button]:hover {
+  background-color: #f1097d;
+}

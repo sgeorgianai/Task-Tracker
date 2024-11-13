@@ -1,0 +1,49 @@
+.task-item {
+
+    border-radius: 0.65rem;
+    padding: 1rem;
+    margin: 0 auto; 
+    max-width: 400px; 
+}
+
+.task-item {
+    background-color: #73D2DE;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .handwritten-font {
+    font-family: 'Pacifico', cursive;
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: hotpink;
+    margin-top: 5px;
+    margin-bottom: 3px;
+  }
+  
+  .larger-font {
+    font-size: 1.3em;
+  }
+  
+  .status {
+    color: white;
+  }
+  .task-actions {
+    display: flex; 
+    justify-content: flex-end; 
+  }
+
+  .task-actions button {
+    background-color: transparent;
+    color: hotpink; 
+    border: none; 
+    border-radius: 50%; 
+    padding: 8px; 
+    transition: background-color 0.3s, color 0.3s; 
+  }
+  
+  .task-actions button:hover {
+    background-color:  rgba(0, 0, 0, 0.04); 
+  }
+  
+  

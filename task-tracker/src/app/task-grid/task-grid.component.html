@@ -1,0 +1,52 @@
+<div class="task-columns">
+  <div class="task-column">
+    <h2>To do</h2>
+    <div *ngFor="let task of tasks1">
+      <div *ngIf="task.status.toString() === 'To Do'">
+        <mat-card-actions>
+          <button class="mat-icon-button" mat-icon-button color="warn" (click)="deleteTask(task)">
+            <mat-icon >delete</mat-icon>
+          </button>
+          <button class="mat-icon-button" mat-icon-button color="primary" (click)="editTask(task)">
+            <mat-icon>edit</mat-icon>
+          </button>
+        </mat-card-actions>
+        <app-task-card [task]="task"></app-task-card>
+      </div>
+    </div>
+  </div>
+  
+  <div class="task-column">
+    <h2>In progress</h2>
+    <div *ngFor="let task of tasks1">
+      <div *ngIf="task.status.toString() === 'In Progress'">
+        <mat-card-actions>
+          <button class="mat-icon-button" mat-icon-button color="warn" (click)="deleteTask(task)">
+            <mat-icon>delete</mat-icon>
+          </button>
+          <button class="mat-icon-button" mat-icon-button color="primary" (click)="editTask(task)">
+            <mat-icon>edit</mat-icon>
+          </button>
+        </mat-card-actions>
+        <app-task-card [task]="task"></app-task-card>
+      </div>
+    </div>
+  </div>
+
+  <div class="task-column">
+    <h2>Done</h2>
+    <div *ngFor="let task of tasks1">
+      <div *ngIf="task.status.toString() === 'Done'">
+        <mat-card-actions>
+          <button class="mat-icon-button" mat-icon-button color="warn" (click)="deleteTask(task)">
+            <mat-icon>delete</mat-icon>
+          </button>
+          <button class="mat-icon-button" mat-icon-button color="primary" (click)="editTask(task)">
+            <mat-icon>edit</mat-icon>
+          </button>
+        </mat-card-actions>
+        <app-task-card [task]="task"></app-task-card>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,26 @@
+<div class="container">
+  <form (ngSubmit)="onSubmit()">
+      <div class="form-group">
+          <label for="taskName">Task Name</label>
+          <input
+            type="text"
+            id="taskName"
+            name="taskName"
+            [(ngModel)]="taskName"
+            class="form-control"
+            required/>
+          <label for="taskDescription">Description</label>
+          <textarea
+            id="taskDescription"
+            name="taskDescription"
+            [(ngModel)]="taskDescription"
+            class="form-control"
+            rows="4"
+          ></textarea>
+      </div>
+      <div class="btn-container"> <!-- Adăugat container pentru butoane -->
+          <button type="submit" class="btn">Submit</button>
+          <button mat-button routerLink="" class="btn">Cancel</button>
+      </div>
+  </form>
+</div>

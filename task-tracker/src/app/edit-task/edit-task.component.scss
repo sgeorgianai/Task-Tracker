@@ -1,0 +1,28 @@
+#editTaskContent{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  #editTaskActions {
+    justify-content: end;
+  }
+
+  .mat-dialog-container {
+  background-color: rgba(255, 192, 203, 0.3); 
+  border-radius: 10px; 
+}
+
+mat-dialog-actions button {
+  background-color: #f48fb1; 
+  color: #fff; 
+}
+
+mat-dialog-actions button:hover {
+  background-color: #ec407a; 
+}
+.title{
+  font-family: 'Pacifico', cursive;
+  text-align: center;
+  color:#ec407a;
+}

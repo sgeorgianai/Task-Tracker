@@ -1,0 +1,21 @@
+<div class="top-bar">
+  <!-- Bara de sus existentă -->
+  <p>
+    {{notificationMessage}}
+  </p>
+  <div class="buttons">
+    <button mat-button (click)="isList = true"><mat-icon>list</mat-icon>  </button>
+    <button mat-button (click)="isList = false"><mat-icon>grid_on</mat-icon>  </button>
+  </div>
+</div>
+
+<div class="content">
+  <!-- Conținutul paginii -->
+  <div *ngIf="isList">
+    <app-task-list></app-task-list>
+  </div>
+  <div *ngIf="!isList">
+    <app-task-grid></app-task-grid>
+  </div>
+  <!-- another section to render task-grid component based on isList value-->
+</div>
